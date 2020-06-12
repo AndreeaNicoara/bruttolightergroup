@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Grande";
+}
+
+/* USING VW INSTEAD OF PX GENERALLY TO HELP WITH RESPONSIVENES!!! */
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between; /* Using flexbox to keep the 3 parts of the header in line and separated, with space between*/
+  padding: 2vw;
+}
+
+header img {
+  width: 18vw;
+}
+
+header input {
+  display: flex;
+  margin: auto; /* Using flexbox and auto margin will keep the bar in the center */
+  height: 2.5vw;
+  width: 30vw;
+  border-radius: 50px;
+  border: 2px solid #EFDA18;
+  padding-left: 2vw;
+}
+
+.menuIcons {
+  display: flex;
+  align-items: center; /* Using flexbox and center aligment in order to keep the 3 icons in line with each other and vertically centered as well */
+}
+
+.menuIcons img {
+  width: 2.5vw;
+  margin-right: 2vw; /* Adding extra space between icons for aesthetics */
+}
+
+.mainSlides {
+  position: relative; /* Using relative position on container and position absolute for content inside, so that the content can be shown on top of the container */
+  display: flex;
+  justify-content: center; /* Using flexbox center to keep the nav centered */
+}
+
+.mainSlides img {
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  padding: 2vw;
+}
+
+nav a {
+  padding-right: 2vw; /* Creating extra space between nav buttons */
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: black;
+}
+
+.slidesText {
+  text-align: center;
+  position: absolute; /* Doing the same absolute position to keep content on top of container */
+  top: 15%;
+  right: 15%; /* Placing text from the top-right */
+  font-size: 1.5vw;
+  border: 1px solid #D3D3D3;
+  width: 35%;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slidesText h2 {
+  padding: 20%;
+}
+
+.slide {
+  display: none; /* Hiding the slides from the CSS, so that we can rework the way they interact in the script */
+}
+
+.freshDeals {
+  margin-top: 10vw;
+  position: relative; /* Doing the same absolute position to keep content on top of container */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.freshDeals img {
+  width: 100%;
+}
+
+.freshDeals h3 {
+  font-size: 2.5vw;
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  width: 30vw;
+  height: 10vw;
+  top: -10%; /* Using negative percentage to push the box above outside the top of the image, to resemble the design */
+  padding: 3vw;
+}
+
+.quickShopping {
+  margin-top: 5vw;
+}
+
+.quickShopping h3 {
+  font-size: 2.5vw;
+  background-color: #EFDA18;
+  width: 30vw;
+  padding: 2vw;
+}
+
+.popularItems {
+  display: flex;
+  justify-content: space-between; /* Using flexbox and space-between to align items in line and to create space between each grocery*/
+  padding: 5vw;
+  text-align: center;
+}
+
+.popularItems img {
+  width: 15vw;
+}
+
+.popularItems p {
+  font-size: 1vw;
+  background-color: #EFDA18;
+  margin-top: 2vw;
+  height: 3vw;
+  width: 15vw;
+  padding: 0.8vw;
+}
+
+.catalogue {
+  position: relative; /* Doing the same absolute position to keep content on top of container */
+}
+
+#catalogueLogo {
+  position: absolute;
+  width: 20vw;
+  top: 9.3%;
+  padding: 1vw;
+  background-color: #2B2020;
+}
+
+#cataloguePicture {
+  width: 70vw;
+  margin: 5vw 15vw 0vw 15vw;
+}
+
+#catalogueText {
+  position: absolute;
+  right: 0%;
+  bottom: 0.7%;
+  font-size: 2.5vw;
+  background-color: #2B2020;
+  color: #EFDA18;
+  padding: 1vw;
+}
+
+footer {
+  margin-top: 10vw;
+  background-color: black;
+  padding: 1.5vw;
+}
+
+.footerSection {
+  padding-left: 2vw;
+}
+
+.footerInfo {
+  display: flex; /* Keeping sections inside the footer in line to each other */
+}
+
+.footerLogo {
+  width: 20vw;
+  padding: 2vw;
+}
+
+.footerTitle {
+  color: #EFDA18;
+  font-size: 2vw;
+  padding: 1vw 0vw 0vw 2vw;
+  font-weight: bold;
+}
+
+.footerText {
+  color: white;
+  width: 25vw;
+  font-size: 1.5vw;
+  margin: 0vw 0vw 0vw 2vw;
+}
+
+.footerSection #email {
+  width: 20vw;
+  margin: 3vw 0vw 0vw 2vw;
+  height: 3vw;
+  border-radius: 15px;
+  border: 2px solid #EFDA18;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.footerSection #subscribe {
+  margin: 1vw 0vw 0vw 7.5vw;
+  width: 10vw;
+  height: 3vw;
+  background-color: #EFDA18;
+  font-size: 1.5vw;
+  border-radius: 15px;
+}
